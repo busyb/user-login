@@ -61,7 +61,7 @@ OOP - object oriented programming
   --> hide from other parts of you application, why?
       - 1.reduce complexity
       - 2.reduce bugs/error
-      - 3. client/caller
+      - 3. limit what client/caller can see/do with object
 
 *----------------------------------------------------*
 Project: user login
