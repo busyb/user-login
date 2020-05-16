@@ -80,6 +80,13 @@ goals - 1. allow a client to create an account
 tools:
 git --> work on same code in a shared fashion to reduce code errors/duplication
 
+----------
+
+1.1
+---
+goals
+- separate processing logic from data
+- introduce inheritance -> code reuse, share properties
 
 
       

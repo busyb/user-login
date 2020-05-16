@@ -3,31 +3,39 @@ import java.util.Scanner;
 public class User {
     // info: fields, we write them in :camelCase
     //what class has
-  /* private String firstName;
+   private String firstName;
    private String lastName;
    private String userAddress;
    private String userEmail;
-   private int userPhone; */
+   private int userPhone;
 
-   public void newUser() {
+    public String getFirstName() {
+        return firstName;
+    }
 
-         Scanner userSc = new Scanner(System.in);
-         System.out.println("Enter First Name: ");
-         String firstName = userSc.next();
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
 
-        System.out.println("Enter Last Name: ");
-         String lastName = userSc.next();
+    public String getLastName() {
+        return lastName;
+    }
 
-        System.out.println("Enter Street #: ");
-         String userAddress = userSc.next();
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
 
-        System.out.println("Enter E-mail: ");
-         String userEmail = userSc.next();
 
-        System.out.println("Enter Phone: ");
-        long userPhone = userSc.nextLong();
+    public void setUserAddress(String userAddress) {
+        this.userAddress = userAddress;
+    }
 
-        System.out.println("Thank you for signing in " + firstName + " " + lastName + ".");
+    public void setUserEmail(String userEmail) {
+        this.userEmail = userEmail;
+    }
+
+    public void setUserPhone(int userPhone) {
+        this.userPhone = userPhone;
     }
 }
 
