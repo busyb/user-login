@@ -3,12 +3,13 @@ import java.util.Scanner;
 public class User {
     // info: fields, we write them in :camelCase
     //what class has
-    String firstName;
-    String lastName;
-    String userAddress;
-    String userEmail;
-    int userPhone;
-    public void newUser(){
+  /* private String firstName;
+   private String lastName;
+   private String userAddress;
+   private String userEmail;
+   private int userPhone; */
+
+   public void newUser() {
 
          Scanner userSc = new Scanner(System.in);
          System.out.println("Enter First Name: ");
