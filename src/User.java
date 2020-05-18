@@ -1,4 +1,3 @@
-import java.util.Scanner;
 
 public class User {
     // info: fields, we write them in :camelCase
@@ -36,6 +35,11 @@ public class User {
 
     public void setUserPhone(int userPhone) {
         this.userPhone = userPhone;
+    }
+
+    // we can leave it empty --> children will override
+    public String buildUserConfirmationMessage(){
+        return  "";
     }
 }
 

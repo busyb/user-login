@@ -86,8 +86,14 @@ git --> work on same code in a shared fashion to reduce code errors/duplication
 ---
 goals
 - separate processing logic from data
-- introduce inheritance -> code reuse, share properties
 
+1.2
+---
+- introduce inheritance -> code reuse, share properties
+       -> different type of user  
+            --> two types --> normal, premium 
+                print-> different, but everything else is the same
+                
 
       
 

@@ -6,18 +6,36 @@ public class RegisterUserApplication {
     public static void main(String[] args) {
 
         //create user
-        User loginUser = new User();
+//        User loginUser = new User();
         
         // do action on user -> user with action complete --> put/capture info into user object
-        User userWithData = setUserDataFromCommandline(loginUser);
+        User userWithData = setUserDataFromCommandline();
 
         //print info --> confirm user create
         printOutNewUserName(userWithData);
     }
 
     // move the method into another class
-    private static User setUserDataFromCommandline(User emptyUser){
+    private static User setUserDataFromCommandline(){
         Scanner scannerInput = new Scanner(System.in);
+        User emptyUser;
+
+        // determine type of user
+        System.out.println("Which type of account, type p - (premium) or type n - (normal)");
+        String userType = scannerInput.next();
+
+        //condition if or else
+
+        // else if, do this if the previous condition was not meet
+
+        if(userType.equalsIgnoreCase("n")){
+            emptyUser = new NormalUser();
+        } else if (userType.equalsIgnoreCase("p")) {
+            emptyUser = new PremiumUser();
+        } else {
+            // throw an error
+            throw new RuntimeException("Sorry at this moment we can only create normal or premium users");
+        }
 
         // set data
         System.out.println("Enter First Name: ");
@@ -46,6 +64,6 @@ public class RegisterUserApplication {
 
     // printer
     private static void printOutNewUserName(User userWithData) {
-        System.out.println("Thank you for registering: " + userWithData.getFirstName() + " " + userWithData.getLastName() + ".");
+        System.out.println(userWithData.buildUserConfirmationMessage());
     }
 }
